@@ -283,3 +283,44 @@ review multiple at once
 
 ### Vim
 * `:term make readme`
+
+### Git
+* `git push -u origin main` from local machine to github
+* `git pull -u origin main` from github to local
+* `git stash --include-untracked` remove all local changes including untracked
+* `git stash drop` drop stash
+* `git add -A`  deal with deleted files, etc
+
+#### aliases 
+
+```
+.git/config 
+[user] 
+    email = []
+    name = []
+ 
+[alias] 
+    ci = commit 
+    st = status 
+    co = checkout 
+    oneline = log --pretty=oneline 
+    br = branch 
+    la = log --pretty='format:%ad %h (%an): %s' --date=short 
+    gr = log --pretty='format:%h %s' --graph 
+    ls = ls-tree -r HEAD --name-only 
+    todo  = grep --heading --break --ignore-case -e 'TODO: *' 
+    fixme = grep --heading --break --ignore-case -e 'FIX: *' -e 'FIXME: *' 
+ 
+~/.bashrc 
+alias dexec="docker exec -it rockr /bin/bash" 
+alias dps="docker ps" 
+alias dimg="docker images | less"
+```
+
+#### docker
+
+```
+// from remote to local  
+ssh target_server 'docker save image:latest | bzip2' | pv | bunzip2 | docker load 
+ssh linode 'docker save rocker/tidyverse:v1h | bzip2' | pv | bunzip2 | docker load
+```
