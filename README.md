@@ -269,7 +269,7 @@ review multiple at once
 * (tag1 and tag2) or (tag..)
 * `is:new` `rated:1`
 * addons `/.local/share/Anki2/addons21`
-
+* [tag documentation](https://docs.ankiweb.net/searching.html)
 
 ### Vscode
 * `  code --ignore-certificate-errors`
@@ -290,6 +290,8 @@ review multiple at once
 * `git stash --include-untracked` remove all local changes including untracked
 * `git stash drop` drop stash
 * `git add -A`  deal with deleted files, etc
+* `git remote add origin [url]` connect local to remote(github) repo that create
+* `git branch -M main` set master as main branch
 
 #### aliases 
 
