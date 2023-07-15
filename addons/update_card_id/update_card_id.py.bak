@@ -1,0 +1,69 @@
+from anki.hooks import addHook
+from aqt import mw
+from aqt.qt import QAction
+from aqt.utils import tooltip
+
+from anki import hooks
+
+def update_card_id(note):
+    field_name = "CardId"
+    target_note_type = "template_basic"  # Replace this with the desired note type name
+
+    # Check if the note type matches the target note type
+    if note.model()['name'] != target_note_type:
+        return
+
+    if field_name not in note:
+        return
+
+    # Only update CardId for newly added notes
+    if note.id < 0:
+        card_id = note.id
+        note[field_name] = str(card_id)
+        note.flush()
+    else:
+        # Check if the note is selected in the browser
+        if mw.state == "overview":
+            overview = mw.overview
+            if overview and note.id in overview.selectedNotes():
+                note[field_name] = str(note.id)
+                note.flush()
+
+
+
+def update_card_id2(note):
+    field_name = "CardId"
+    target_note_type = "template_basic"
+    
+    # Check if the note type matches the target note type
+    if note.model()['name'] != target_note_type:
+        return
+
+    if field_name not in note:
+        return
+    
+    card_id = note.id
+    note[field_name] = str(card_id)
+    note.flush()
+
+def update_selected_cards(browser):
+    selected_notes = browser.selectedNotes()
+    updated_count = 0
+    for note_id in selected_notes:
+        note = mw.col.get_note(note_id)
+        was_updated = update_card_id(note)
+        if was_updated:
+            updated_count += 1
+
+    tooltip(f"Updated CardId for {updated_count} cards.")
+
+
+def on_setup_menus(browser):
+    action = QAction("Update CardId", browser)
+    action.triggered.connect(lambda: update_selected_cards(browser))
+    browser.form.menuEdit.addAction(action)
+
+
+addHook("browser.setupMenus", on_setup_menus)
+addHook("note.adding", update_card_id)
+addHook("note.editing", update_card_id)

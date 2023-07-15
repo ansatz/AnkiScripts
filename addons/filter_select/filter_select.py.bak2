@@ -1,0 +1,129 @@
+from aqt import mw
+from aqt.qt import QAction
+from aqt.utils import showInfo
+from anki.hooks import addHook
+from anki.utils import intTime
+
+import datetime
+
+def change_tags(n_days=7, note_types=None):
+    if note_types is None:
+        #note_types = ["template_basic", "template_field_hidden_copy", "marked"]
+        note_types = ["template_basic",
+                        "template_field_hidden copy",
+                        "berkeley-Cloze-SansForgetica",  
+                        "berkeley-notes-link",
+                        "berekeley-basic-test",
+                        "berkeley-Cloze",
+                        "scanned_notebook",
+                        "Image Occlusion Enhanced",
+                        "Cloze"]
+    
+    # Calculate the timestamp for n days ago
+    days_ago = intTime() - (n_days * 86400)
+
+    # Build the search query for the specified note types
+    note_types_query = " or ".join(f'note:"{note_type}"' for note_type in note_types)
+
+    #query = f"({note_types_query}) (tag:__filter__ or tag:__select__ or tag:__question__) (tag:marked or flag:4)".format()
+    
+    fwd = f"({note_types_query}) (tag:__filter__ or tag:__select__ or tag:__question__) tag:marked -flag:4".format()
+    bwd = f"({note_types_query}) (tag:__filter__ or tag:__select__ or tag:__question__) -tag:marked flag:4".format()
+
+    card_ids = mw.col.find_cards(query)
+    filtered_count, selected_count, question_count= 0,0,0
+
+    for card_id in card_ids:
+        card = mw.col.getCard(card_id)
+        note = card.note()
+        # mod in past n days
+        #if card.mod > days_ago: 
+        flag = card.userFlag()
+
+        # Change the tag from __filter__ to __select__ and remove the marked
+        if "__filter__" in note.tags and flag == 0:
+            note.delTag("__filter__")
+            note.delTag("marked")
+            note.addTag("__select__")
+            note.flush()
+            selected_count += 1
+
+        # Change the tag from __select__ to __question__ and remove the marked
+        elif "__select__" in note.tags and flag == 0:
+            note.delTag("__select__")
+            note.delTag("marked")
+            note.addTag("__question__")
+            note.flush()
+            question_count+=1
+
+        # Change the tag from __select__ to __filter__ and remove the flag if the card has flag:4
+        elif "__select__" in note.tags and flag == 4:
+            note.delTag("__select__")
+            note.delTag("marked")
+            note.addTag("__filter__")
+            note.flush()
+            card.setUserFlag(0)
+            card.flush()
+            filtered_count+=1
+
+        # Change the tag from __question__ to __select__ and remove the flag if the card has flag:4
+        elif "__question__" in note.tags and flag == 4:
+            note.delTag("__question__")
+            note.delTag("marked")
+            note.addTag("__select__")
+            note.flush()
+            card.setUserFlag(0)
+            card.flush()
+            selected_count+=1
+
+    return filtered_count, selected_count, question_count
+
+# add tag to cards added from today to beginning of month
+def newCards():
+    # Days since beginning of month
+    now = intTime()                             # current time as an integer
+    dt = datetime.datetime.fromtimestamp(now)   # convert integer time to a datetime object
+    day = dt.day                                # ie datetime.date(2023, 4, 25)
+    ndays = day - 1
+    
+    ##YYYY_Apr 
+    monthTag = "{}_{}".format(dt.strftime("%Y"), dt.strftime("%b"))
+    #monthDir = "{}_{}{}".format(dt.strftime("%Y"), dt.strftime("%m"), dt.strftime("%b"))
+    
+    # anki query added:n is:new
+    card_ids = mw.col.find_cards(f"added:{ndays}")
+    count = 0
+    for card_id in card_ids:
+        card = mw.col.getCard(card_id)
+        note = card.note()
+
+        # check no tags 
+        if bool( set(["__filter__", "__select__","__question__"]) & \
+                        set(note.tags) ) == True:
+            continue
+        else:
+            note.addTag("__filter__")
+            note.addTag(monthTag)
+            note.flush()
+            card.flush()
+            count+=1
+    return count
+
+    
+def on_change_tags():
+    new_cards = newCards() #add __filter__ to this months cards
+    filtered_count, selected_count, question_count = change_tags(n_days=7)
+    showInfo(f"Tags have been updated!\n\
+             __filtered__: {filtered_count}\n\
+             __selected__: {selected_count}\n\
+             __question__: {question_count}\n\
+             new_cards __filter__: {new_cards}")
+
+
+# Add a menu item to trigger the function
+action = QAction("Update Tags", mw) 
+action.triggered.connect(on_change_tags)
+mw.form.menuTools.addAction(action)
+
+
+

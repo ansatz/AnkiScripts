@@ -1,0 +1,51 @@
+from aqt import mw
+from aqt.utils import tooltip
+from anki.hooks import addHook
+from anki.schedv2 import Scheduler
+from aqt.qt import QAction, QMenu
+from anki.consts import *
+import datetime
+
+def update_cards_and_rebuild_deck():
+
+    # Get the current date
+    today = datetime.date.today()
+
+    # Check if the add-on has already run today
+    last_run_date = mw.col.get_config("last_run_date", None)
+    if last_run_date == today.isoformat():
+        return
+
+    # Find marked cards that were reviewed within the last n days
+    n_days = 1  # Set the number of days to search
+    search_query = f"rated:{n_days} tag:marked"
+    card_ids = mw.col.find_cards(search_query)
+
+    # Change tag from __filter__ to __select__
+    for card_id in card_ids:
+        card = mw.col.getCard(card_id)
+        note = card.note()
+        note.delTag("__filter__")
+        note.addTag("__select__")
+        note.flush()
+
+    # Rebuild the specific filtered deck
+    deck_name = "YourFilteredDeckName"  # Set the filtered deck name
+    deck_id = mw.col.decks.id(deck_name)
+    mw.col.decks.select(deck_id)
+    mw.col.sched.rebuild_filtered_deck(deck_id)
+
+    # Update the last run date
+    mw.col.set_config("last_run_date", today.isoformat())
+    mw.col.setMod()
+
+    tooltip("Updated cards and rebuilt filtered deck")
+
+
+def setup_menu_item(browser):
+    action = QAction("Update cards and rebuild deck", browser)
+    action.triggered.connect(update_cards_and_rebuild_deck)
+    browser.form.menuTools.addAction(action)
+
+
+addHook("browser.setupMenus", setup_menu_item)
