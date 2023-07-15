@@ -292,6 +292,27 @@ review multiple at once
 * `git add -A`  deal with deleted files, etc
 * `git remote add origin [url]` connect local to remote(github) repo that create
 * `git branch -M main` set master as main branch
+* `git diff br1:file br2:file` see file diff between branches
+
+```
+_start_working:
+ls => gives the files of where you are at in git
+git branch -v => //master(1st one you ever started with)?/
+                 //current branch will be *
+git log --decorate => shows the curr branch and its commits
+git checkout 'branch-name' //switch branches
+git checkout 'commit-file' //checkout commit
+
+_merge_:
+check out branch you wish to merge into, then
+git merge branch-to-be-merged
+CONFLICT:
+resolve by hand;
+file above ====== is head(MASTER) | file below is
+to-be-merged ;
+then git add //to stage
+git mergetool
+```
 
 #### aliases 
 
