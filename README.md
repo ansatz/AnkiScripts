@@ -3,6 +3,7 @@
 Collection of Anki addons and scripts to parse sources, crop pdf papers, run OCR, provide a reading workflow, and customize templates for notes.
  
 To run:
+//for krop change dir to location of pdf//
 ```
     make dockeranki
     # in container 
@@ -74,8 +75,7 @@ flowchart LR
 ```
 
 ### Crop paragraphs from pdf-papers
-* run the krop binary
-* pdfburst and krop program
+* krop-pdfs/. ./krop.sh [paper] [yyyy-mon]
 
 
 ### Create notes from different reading material
