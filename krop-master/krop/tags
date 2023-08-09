@@ -1,0 +1,439 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AbstractPdfCropper	pdfcropper.py	/^class AbstractPdfCropper:$/;"	c	inherits:
+AbstractPdfFile	pdfcropper.py	/^class AbstractPdfFile:$/;"	c	inherits:
+AbstractViewerItem	vieweritem.py	/^class AbstractViewerItem(QGraphicsItem):$/;"	c
+AbstractViewerItem	vieweritem.py	/^class AbstractViewerItem(QGraphicsItem):$/;"	c	inherits:QGraphicsItem
+AspectRatioType	mainwindow.py	/^class AspectRatioType:$/;"	c
+AspectRatioType	mainwindow.py	/^class AspectRatioType:$/;"	c	inherits:
+AspectRatioTypeManager	mainwindow.py	/^class AspectRatioTypeManager:$/;"	c
+AspectRatioTypeManager	mainwindow.py	/^class AspectRatioTypeManager:$/;"	c	inherits:
+BottomHandle	viewerselections.py	/^    BottomHandle = 4$/;"	v	class:SelectionHandleItem
+DeviceTypeManager	mainwindow.py	/^class DeviceTypeManager(AspectRatioTypeManager):$/;"	c
+DeviceTypeManager	mainwindow.py	/^class DeviceTypeManager(AspectRatioTypeManager):$/;"	c	inherits:AspectRatioTypeManager
+KDE	config.py	/^            KDE = True$/;"	v
+KDE	config.py	/^KDE = False$/;"	v
+LeftHandle	viewerselections.py	/^    LeftHandle = 1$/;"	v	class:SelectionHandleItem
+MainWindow	mainwindow.py	/^class MainWindow(QKMainWindow):$/;"	c
+MainWindow	mainwindow.py	/^class MainWindow(QKMainWindow):$/;"	c	inherits:QKMainWindow
+MyWidget	application.py	/^class MyWidget(QWidget):$/;"	c
+MyWidget	application.py	/^class MyWidget(QWidget):$/;"	c	inherits:QWidget
+PYQT5	config.py	/^            PYQT5 = True$/;"	v
+PYQT5	config.py	/^PYQT5 = False$/;"	v
+PdfCropper	pdfcropper.py	/^PdfCropper = PyPdfCropper$/;"	v
+PdfEncryptedError	pdfcropper.py	/^class PdfEncryptedError(Exception):$/;"	c	inherits:Exception
+PdfFile	pdfcropper.py	/^PdfFile = PyPdfFile$/;"	v
+PopplerViewerItem	vieweritem.py	/^class PopplerViewerItem(AbstractViewerItem):$/;"	c
+PopplerViewerItem	vieweritem.py	/^class PopplerViewerItem(AbstractViewerItem):$/;"	c	inherits:AbstractViewerItem
+PyPdfCropper	pdfcropper.py	/^class PyPdfCropper(AbstractPdfCropper):$/;"	c	inherits:AbstractPdfCropper
+PyPdfFile	pdfcropper.py	/^class PyPdfFile(AbstractPdfFile):$/;"	c	inherits:AbstractPdfFile
+QKMainWindow	mainwindow.py	/^    QKMainWindow = QMainWindow$/;"	v
+RightHandle	viewerselections.py	/^    RightHandle = 2$/;"	v	class:SelectionHandleItem
+SelAspectRatioTypeManager	mainwindow.py	/^class SelAspectRatioTypeManager(AspectRatioTypeManager):$/;"	c
+SelAspectRatioTypeManager	mainwindow.py	/^class SelAspectRatioTypeManager(AspectRatioTypeManager):$/;"	c	inherits:AspectRatioTypeManager
+SelectionCornerHandleItem	viewerselections.py	/^class SelectionCornerHandleItem(QGraphicsItem):$/;"	c
+SelectionCornerHandleItem	viewerselections.py	/^class SelectionCornerHandleItem(QGraphicsItem):$/;"	c	inherits:QGraphicsItem
+SelectionHandleItem	viewerselections.py	/^class SelectionHandleItem(QGraphicsItem):$/;"	c
+SelectionHandleItem	viewerselections.py	/^class SelectionHandleItem(QGraphicsItem):$/;"	c	inherits:QGraphicsItem
+TopHandle	viewerselections.py	/^    TopHandle = 3$/;"	v	class:SelectionHandleItem
+Ui_MainWindow	mainwindowui_qt4.py	/^class Ui_MainWindow(object):$/;"	c	inherits:object
+Ui_MainWindow	mainwindowui_qt5.py	/^class Ui_MainWindow(object):$/;"	c	inherits:object
+Ui_MainWindow	mwui_qt5.py	/^class Ui_MainWindow(object):$/;"	c	inherits:object
+ViewerItem	vieweritem.py	/^ViewerItem = PopplerViewerItem$/;"	v
+ViewerSelectionItem	viewerselections.py	/^class ViewerSelectionItem(QGraphicsItem):$/;"	c
+ViewerSelectionItem	viewerselections.py	/^class ViewerSelectionItem(QGraphicsItem):$/;"	c	inherits:QGraphicsItem
+ViewerSelections	viewerselections.py	/^class ViewerSelections(object):$/;"	c
+ViewerSelections	viewerselections.py	/^class ViewerSelections(object):$/;"	c	inherits:object
+__init__	application.py	/^    def __init__(self, parent=None):$/;"	m	class:MyWidget
+__init__	application.py	/^    def __init__(self, parent=None):$/;"	m	class:MyWidget	access:public
+__init__	mainwindow.py	/^    def __init__(self):$/;"	m	class:AspectRatioTypeManager
+__init__	mainwindow.py	/^    def __init__(self):$/;"	m	class:AspectRatioTypeManager	access:public
+__init__	mainwindow.py	/^    def __init__(self):$/;"	m	class:MainWindow
+__init__	mainwindow.py	/^    def __init__(self):$/;"	m	class:MainWindow	access:public
+__init__	mainwindow.py	/^    def __init__(self, name, width, height):$/;"	m	class:AspectRatioType
+__init__	mainwindow.py	/^    def __init__(self, name, width, height):$/;"	m	class:AspectRatioType	access:public
+__init__	pdfcropper.py	/^    def __init__(self):$/;"	m	class:PyPdfCropper	access:public
+__init__	pdfcropper.py	/^    def __init__(self):$/;"	m	class:PyPdfFile	access:public
+__init__	vieweritem.py	/^    def __init__(self, mainwindow):$/;"	m	class:AbstractViewerItem
+__init__	vieweritem.py	/^    def __init__(self, mainwindow):$/;"	m	class:AbstractViewerItem	access:public
+__init__	viewerselections.py	/^    def __init__(self, parent, lr, tb):$/;"	m	class:SelectionCornerHandleItem
+__init__	viewerselections.py	/^    def __init__(self, parent, lr, tb):$/;"	m	class:SelectionCornerHandleItem	access:public
+__init__	viewerselections.py	/^    def __init__(self, parent, rect=None):$/;"	m	class:ViewerSelectionItem
+__init__	viewerselections.py	/^    def __init__(self, parent, rect=None):$/;"	m	class:ViewerSelectionItem	access:public
+__init__	viewerselections.py	/^    def __init__(self, parent, role):$/;"	m	class:SelectionHandleItem
+__init__	viewerselections.py	/^    def __init__(self, parent, role):$/;"	m	class:SelectionHandleItem	access:public
+__init__	viewerselections.py	/^    def __init__(self, viewer):$/;"	m	class:ViewerSelections
+__init__	viewerselections.py	/^    def __init__(self, viewer):$/;"	m	class:ViewerSelections	access:public
+__iter__	mainwindow.py	/^    def __iter__(self):$/;"	m	class:AspectRatioTypeManager	file:
+__iter__	mainwindow.py	/^    def __iter__(self):$/;"	m	class:AspectRatioTypeManager	file:	access:private
+__version__	version.py	/^__version__ = '0.5.1'$/;"	v
+_encoding	mainwindowui_qt4.py	/^    _encoding = QtGui.QApplication.UnicodeUTF8$/;"	v
+_fromUtf8	mainwindowui_qt4.py	/^    _fromUtf8 = QtCore.QString.fromUtf8$/;"	v
+_fromUtf8	mainwindowui_qt4.py	/^    def _fromUtf8(s):$/;"	f	access:public
+_msg	config.py	/^    _msg = "Please install PyQt4 or PyQt5 first."$/;"	v
+_msg	pdfcropper.py	/^            "\\n\\t(or, if using python3) sudo apt-get install python3-pypdf2"$/;"	v
+_msg	vieweritem.py	/^            "\\n\\t(or, if using python3) sudo apt-get install python3-poppler-qt4"$/;"	v
+_msg	vieweritem.py	/^        _msg = "Please install popplerqt5 first."$/;"	v
+_translate	mainwindowui_qt4.py	/^    def _translate(context, text, disambig):$/;"	f	access:public
+addDefaults	mainwindow.py	/^    def addDefaults(self):$/;"	m	class:AspectRatioTypeManager
+addDefaults	mainwindow.py	/^    def addDefaults(self):$/;"	m	class:AspectRatioTypeManager	access:public
+addDefaults	mainwindow.py	/^    def addDefaults(self):$/;"	m	class:DeviceTypeManager
+addDefaults	mainwindow.py	/^    def addDefaults(self):$/;"	m	class:DeviceTypeManager	access:public
+addDefaults	mainwindow.py	/^    def addDefaults(self):$/;"	m	class:SelAspectRatioTypeManager
+addDefaults	mainwindow.py	/^    def addDefaults(self):$/;"	m	class:SelAspectRatioTypeManager	access:public
+addPageCropped	pdfcropper.py	/^    def addPageCropped(self, pdffile, pagenumber, croplist, alwaysinclude, rotate=0):$/;"	m	class:PyPdfCropper	access:public
+addPageCropped	pdfcropper.py	/^    def addPageCropped(self, pdffile, pagenumber, croplist, rotate=0):$/;"	m	class:AbstractPdfCropper	access:public
+addSelection	viewerselections.py	/^    def addSelection(self, rect=None):$/;"	m	class:ViewerSelections
+addSelection	viewerselections.py	/^    def addSelection(self, rect=None):$/;"	m	class:ViewerSelections	access:public
+addType	mainwindow.py	/^    def addType(self, name, width, height):$/;"	m	class:AspectRatioTypeManager
+addType	mainwindow.py	/^    def addType(self, name, width, height):$/;"	m	class:AspectRatioTypeManager	access:public
+adjustBoundingRect	viewerselections.py	/^    def adjustBoundingRect(self, dx1=0, dy1=0, dx2=0, dy2=0):$/;"	m	class:ViewerSelectionItem
+adjustBoundingRect	viewerselections.py	/^    def adjustBoundingRect(self, dx1=0, dy1=0, dx2=0, dy2=0):$/;"	m	class:ViewerSelectionItem	access:public
+adjustForOrientation	vieweritem.py	/^        def adjustForOrientation(cv):$/;"	f	function:PopplerViewerItem.cropValues
+adjustForOrientation	vieweritem.py	/^        def adjustForOrientation(cv):$/;"	f	function:PopplerViewerItem.cropValues	access:public
+all	viewerselections.py	/^    all = 0$/;"	v	class:ViewerSelections
+aspectRatio	viewerselections.py	/^    def aspectRatio(self):$/;"	m	class:ViewerSelectionItem
+aspectRatio	viewerselections.py	/^    def aspectRatio(self):$/;"	m	class:ViewerSelectionItem	access:public
+aspectRatioData	viewerselections.py	/^    aspectRatioData= property(getAspectRatioData, setAspectRatioData)$/;"	v	class:ViewerSelectionItem
+aspectRatioFromStr	viewerselections.py	/^def aspectRatioFromStr(s):$/;"	f
+aspectRatioFromStr	viewerselections.py	/^def aspectRatioFromStr(s):$/;"	f	access:public
+autoSetCurrentSelection	viewerselections.py	/^    def autoSetCurrentSelection(self):$/;"	m	class:ViewerSelections
+autoSetCurrentSelection	viewerselections.py	/^    def autoSetCurrentSelection(self):$/;"	m	class:ViewerSelections	access:public
+autoTrimMargins	autotrim.py	/^def autoTrimMargins(img, r, minr, sensitivity, allowedchanges):$/;"	f	access:public
+boundingRect	vieweritem.py	/^    def boundingRect(self):$/;"	m	class:AbstractViewerItem
+boundingRect	vieweritem.py	/^    def boundingRect(self):$/;"	m	class:AbstractViewerItem	access:public
+boundingRect	viewerselections.py	/^    def boundingRect(self):$/;"	m	class:SelectionCornerHandleItem
+boundingRect	viewerselections.py	/^    def boundingRect(self):$/;"	m	class:SelectionCornerHandleItem	access:public
+boundingRect	viewerselections.py	/^    def boundingRect(self):$/;"	m	class:SelectionHandleItem
+boundingRect	viewerselections.py	/^    def boundingRect(self):$/;"	m	class:SelectionHandleItem	access:public
+boundingRect	viewerselections.py	/^    def boundingRect(self):$/;"	m	class:ViewerSelectionItem
+boundingRect	viewerselections.py	/^    def boundingRect(self):$/;"	m	class:ViewerSelectionItem	access:public
+cV	viewerselections.py	/^        def cV(r):$/;"	f	function:ViewerSelectionItem.cropValues
+cV	viewerselections.py	/^        def cV(r):$/;"	f	function:ViewerSelectionItem.cropValues	access:public
+cacheImage	vieweritem.py	/^    def cacheImage(self, idx):        $/;"	m	class:AbstractViewerItem
+cacheImage	vieweritem.py	/^    def cacheImage(self, idx):        $/;"	m	class:AbstractViewerItem	access:public
+cacheImage	vieweritem.py	/^    def cacheImage(self, idx):        $/;"	m	class:PopplerViewerItem
+cacheImage	vieweritem.py	/^    def cacheImage(self, idx):        $/;"	m	class:PopplerViewerItem	access:public
+closeEvent	mainwindow.py	/^    def closeEvent(self, event):$/;"	m	class:MainWindow
+closeEvent	mainwindow.py	/^    def closeEvent(self, event):$/;"	m	class:MainWindow	access:public
+copyDocumentRoot	pdfcropper.py	/^    def copyDocumentRoot(self, pdffile):$/;"	m	class:AbstractPdfCropper	access:public
+copyDocumentRoot	pdfcropper.py	/^    def copyDocumentRoot(self, pdffile):$/;"	m	class:PyPdfCropper	access:public
+corner	viewerselections.py	/^    def corner(self, rect):$/;"	m	class:SelectionCornerHandleItem
+corner	viewerselections.py	/^    def corner(self, rect):$/;"	m	class:SelectionCornerHandleItem	access:public
+createSelectionGrid	mainwindow.py	/^    def createSelectionGrid(self, grid):$/;"	m	class:MainWindow
+createSelectionGrid	mainwindow.py	/^    def createSelectionGrid(self, grid):$/;"	m	class:MainWindow	access:public
+cropPage	pdfcropper.py	/^    def cropPage(self, page, crop, rotate):$/;"	m	class:PyPdfCropper	access:public
+cropValues	vieweritem.py	/^    def cropValues(self, idx):$/;"	m	class:AbstractViewerItem
+cropValues	vieweritem.py	/^    def cropValues(self, idx):$/;"	m	class:AbstractViewerItem	access:public
+cropValues	vieweritem.py	/^    def cropValues(self, idx):$/;"	m	class:PopplerViewerItem
+cropValues	vieweritem.py	/^    def cropValues(self, idx):$/;"	m	class:PopplerViewerItem	access:public
+cropValues	viewerselections.py	/^    def cropValues(self):$/;"	m	class:ViewerSelectionItem
+cropValues	viewerselections.py	/^    def cropValues(self):$/;"	m	class:ViewerSelectionItem	access:public
+cropValues	viewerselections.py	/^    def cropValues(self, idx):$/;"	m	class:ViewerSelections
+cropValues	viewerselections.py	/^    def cropValues(self, idx):$/;"	m	class:ViewerSelections	access:public
+currentPageIndex	vieweritem.py	/^    currentPageIndex = property(getCurrentPageIndex, setCurrentPageIndex)$/;"	v	class:AbstractViewerItem
+currentSelection	viewerselections.py	/^    currentSelection = property(getCurrentSelection, setCurrentSelection)$/;"	v	class:ViewerSelections
+currentSelectionUpdated	mainwindow.py	/^    def currentSelectionUpdated(self):$/;"	m	class:MainWindow
+currentSelectionUpdated	mainwindow.py	/^    def currentSelectionUpdated(self):$/;"	m	class:MainWindow	access:public
+currentSelectionUpdated	viewerselections.py	/^    def currentSelectionUpdated(self):$/;"	m	class:ViewerSelections
+currentSelectionUpdated	viewerselections.py	/^    def currentSelectionUpdated(self):$/;"	m	class:ViewerSelections	access:public
+decorator	application.py	/^    def decorator(func):$/;"	f	function:monkeypatch_method
+deleteSelection	viewerselections.py	/^    def deleteSelection(self, s):$/;"	m	class:ViewerSelections
+deleteSelection	viewerselections.py	/^    def deleteSelection(self, s):$/;"	m	class:ViewerSelections	access:public
+deleteSelections	viewerselections.py	/^    def deleteSelections(self):$/;"	m	class:ViewerSelections
+deleteSelections	viewerselections.py	/^    def deleteSelections(self):$/;"	m	class:ViewerSelections	access:public
+direction	viewerselections.py	/^    def direction(self, pt):$/;"	m	class:SelectionCornerHandleItem
+direction	viewerselections.py	/^    def direction(self, pt):$/;"	m	class:SelectionCornerHandleItem	access:public
+distributeAspectRatio	viewerselections.py	/^    def distributeAspectRatio(self):$/;"	m	class:ViewerSelectionItem
+distributeAspectRatio	viewerselections.py	/^    def distributeAspectRatio(self):$/;"	m	class:ViewerSelectionItem	access:public
+distributeAspectRatio	viewerselections.py	/^    distributeAspectRatio = property(getDistributeAspectRatio, setDistributeAspectRatio)$/;"	v	class:ViewerSelections
+distributeAspectRatioChanged	mainwindow.py	/^    def distributeAspectRatioChanged(self, aspectRatio):$/;"	m	class:MainWindow
+distributeAspectRatioChanged	mainwindow.py	/^    def distributeAspectRatioChanged(self, aspectRatio):$/;"	m	class:MainWindow	access:public
+distributeRect	viewerselections.py	/^    def distributeRect(self):$/;"	m	class:ViewerSelectionItem
+distributeRect	viewerselections.py	/^    def distributeRect(self):$/;"	m	class:ViewerSelectionItem	access:public
+doLoad	vieweritem.py	/^    def doLoad(self, filename):$/;"	m	class:AbstractViewerItem
+doLoad	vieweritem.py	/^    def doLoad(self, filename):$/;"	m	class:AbstractViewerItem	access:public
+doLoad	vieweritem.py	/^    def doLoad(self, filename):$/;"	m	class:PopplerViewerItem
+doLoad	vieweritem.py	/^    def doLoad(self, filename):$/;"	m	class:PopplerViewerItem	access:public
+drawLine	viewerselections.py	/^        def drawLine(pt1, pt2):$/;"	f	function:ViewerSelectionItem.paint
+drawLine	viewerselections.py	/^        def drawLine(pt1, pt2):$/;"	f	function:ViewerSelectionItem.paint	access:public
+evenodd	viewerselections.py	/^    evenodd = 1$/;"	v	class:ViewerSelections
+fileName	mainwindow.py	/^    fileName = None$/;"	v	class:MainWindow
+firstPage	vieweritem.py	/^    def firstPage(self):$/;"	m	class:AbstractViewerItem
+firstPage	vieweritem.py	/^    def firstPage(self):$/;"	m	class:AbstractViewerItem	access:public
+getAspectRatioData	viewerselections.py	/^    def getAspectRatioData(self):$/;"	m	class:ViewerSelectionItem
+getAspectRatioData	viewerselections.py	/^    def getAspectRatioData(self):$/;"	m	class:ViewerSelectionItem	access:public
+getCurrentPageIndex	vieweritem.py	/^    def getCurrentPageIndex(self):$/;"	m	class:AbstractViewerItem
+getCurrentPageIndex	vieweritem.py	/^    def getCurrentPageIndex(self):$/;"	m	class:AbstractViewerItem	access:public
+getCurrentSelection	viewerselections.py	/^    def getCurrentSelection(self):$/;"	m	class:ViewerSelections
+getCurrentSelection	viewerselections.py	/^    def getCurrentSelection(self):$/;"	m	class:ViewerSelections	access:public
+getDistributeAspectRatio	viewerselections.py	/^    def getDistributeAspectRatio(self):$/;"	m	class:ViewerSelections
+getDistributeAspectRatio	viewerselections.py	/^    def getDistributeAspectRatio(self):$/;"	m	class:ViewerSelections	access:public
+getImage	vieweritem.py	/^    def getImage(self, idx):$/;"	m	class:AbstractViewerItem
+getImage	vieweritem.py	/^    def getImage(self, idx):$/;"	m	class:AbstractViewerItem	access:public
+getPadding	mainwindow.py	/^    def getPadding(self):$/;"	m	class:MainWindow
+getPadding	mainwindow.py	/^    def getPadding(self):$/;"	m	class:MainWindow	access:public
+getPage	pdfcropper.py	/^    def getPage(self, nr):$/;"	m	class:PyPdfFile	access:public
+getSelectionExceptions	viewerselections.py	/^    def getSelectionExceptions(self):$/;"	m	class:ViewerSelections
+getSelectionExceptions	viewerselections.py	/^    def getSelectionExceptions(self):$/;"	m	class:ViewerSelections	access:public
+getSelectionMode	viewerselections.py	/^    def getSelectionMode(self):$/;"	m	class:ViewerSelections
+getSelectionMode	viewerselections.py	/^    def getSelectionMode(self):$/;"	m	class:ViewerSelections	access:public
+getType	mainwindow.py	/^    def getType(self, index):$/;"	m	class:AspectRatioTypeManager
+getType	mainwindow.py	/^    def getType(self, index):$/;"	m	class:AspectRatioTypeManager	access:public
+handleColor	viewerselections.py	/^    def handleColor(self):$/;"	m	class:SelectionCornerHandleItem
+handleColor	viewerselections.py	/^    def handleColor(self):$/;"	m	class:SelectionCornerHandleItem	access:public
+handleColor	viewerselections.py	/^    def handleColor(self):$/;"	m	class:SelectionHandleItem
+handleColor	viewerselections.py	/^    def handleColor(self):$/;"	m	class:SelectionHandleItem	access:public
+handleColor	viewerselections.py	/^    handleColor = QColor(0,0,128)$/;"	v	class:ViewerSelectionItem
+handleColorCurrent	viewerselections.py	/^    handleColorCurrent = QColor(0,128,0)$/;"	v	class:ViewerSelectionItem
+individual	viewerselections.py	/^    individual = 2$/;"	v	class:ViewerSelections
+isCurrent	viewerselections.py	/^    def isCurrent(self):$/;"	m	class:ViewerSelectionItem
+isCurrent	viewerselections.py	/^    def isCurrent(self):$/;"	m	class:ViewerSelectionItem	access:public
+isEmpty	vieweritem.py	/^    def isEmpty(self):$/;"	m	class:AbstractViewerItem
+isEmpty	vieweritem.py	/^    def isEmpty(self):$/;"	m	class:AbstractViewerItem	access:public
+isPortrait	vieweritem.py	/^    def isPortrait(self):$/;"	m	class:AbstractViewerItem
+isPortrait	vieweritem.py	/^    def isPortrait(self):$/;"	m	class:AbstractViewerItem	access:public
+isTrimmable	autotrim.py	/^    def isTrimmable(L):$/;"	f	function:autoTrimMargins	access:public
+items	viewerselections.py	/^    def items(self):$/;"	m	class:ViewerSelections
+items	viewerselections.py	/^    def items(self):$/;"	m	class:ViewerSelections	access:public
+keyPressEvent	viewerselections.py	/^    def keyPressEvent(self, event):$/;"	m	class:ViewerSelectionItem
+keyPressEvent	viewerselections.py	/^    def keyPressEvent(self, event):$/;"	m	class:ViewerSelectionItem	access:public
+lastPage	vieweritem.py	/^    def lastPage(self):$/;"	m	class:AbstractViewerItem
+lastPage	vieweritem.py	/^    def lastPage(self):$/;"	m	class:AbstractViewerItem	access:public
+load	vieweritem.py	/^    def load(self, filename):$/;"	m	class:AbstractViewerItem
+load	vieweritem.py	/^    def load(self, filename):$/;"	m	class:AbstractViewerItem	access:public
+loadFromFile	pdfcropper.py	/^    def loadFromFile(self, filename):$/;"	m	class:AbstractPdfFile	access:public
+loadFromStream	pdfcropper.py	/^    def loadFromStream(self, stream):$/;"	m	class:AbstractPdfFile	access:public
+loadFromStream	pdfcropper.py	/^    def loadFromStream(self, stream):$/;"	m	class:PyPdfFile	access:public
+loadTypes	mainwindow.py	/^    def loadTypes(self, settings):$/;"	m	class:AspectRatioTypeManager
+loadTypes	mainwindow.py	/^    def loadTypes(self, settings):$/;"	m	class:AspectRatioTypeManager	access:public
+main	application.py	/^def main():$/;"	f
+main	application.py	/^def main():$/;"	f	access:public
+mapRectFromImage	vieweritem.py	/^    def mapRectFromImage(self, r):$/;"	m	class:AbstractViewerItem
+mapRectFromImage	vieweritem.py	/^    def mapRectFromImage(self, r):$/;"	m	class:AbstractViewerItem	access:public
+mapRectFromImage	viewerselections.py	/^    def mapRectFromImage(self, r):$/;"	m	class:ViewerSelectionItem
+mapRectFromImage	viewerselections.py	/^    def mapRectFromImage(self, r):$/;"	m	class:ViewerSelectionItem	access:public
+mapRectToImage	vieweritem.py	/^    def mapRectToImage(self, r):$/;"	m	class:AbstractViewerItem
+mapRectToImage	vieweritem.py	/^    def mapRectToImage(self, r):$/;"	m	class:AbstractViewerItem	access:public
+mapRectToImage	viewerselections.py	/^    def mapRectToImage(self, r):$/;"	m	class:ViewerSelectionItem
+mapRectToImage	viewerselections.py	/^    def mapRectToImage(self, r):$/;"	m	class:ViewerSelectionItem	access:public
+map_to_pdf	application.py	/^		def map_to_pdf(x, y):$/;"	m	class:MyWidget
+map_to_pdf	application.py	/^	def map_to_pdf(x, y):$/;"	m	class:MyWidget
+map_to_pdf	application.py	/^        def map_to_pdf(x, y):$/;"	f	function:MyWidget.slot_ndi
+mapper	application.py	/^    def mapper(self):$/;"	m	class:MyWidget
+mapper	application.py	/^    def mapper(self):$/;"	m	class:MyWidget	access:public
+matrix	application.py	/^		matrix = np.array([[pdf_width \/ image_width, 0, 0],$/;"	v	class:MyWidget
+mnk_mouseReleaseEvent	application.py	/^def mnk_mouseReleaseEvent(self,e)$/;"	f
+mnk_mouseReleaseEvent	application.py	/^def mnk_mouseReleaseEvent(self,e):$/;"	f
+monkeypatch_method	application.py	/^def monkeypatch_method(cls):$/;"	f
+mouseMoveEvent	vieweritem.py	/^    def mouseMoveEvent(self, event):$/;"	m	class:AbstractViewerItem
+mouseMoveEvent	vieweritem.py	/^    def mouseMoveEvent(self, event):$/;"	m	class:AbstractViewerItem	access:public
+mouseMoveEvent	viewerselections.py	/^    def mouseMoveEvent(self, event):$/;"	m	class:SelectionCornerHandleItem
+mouseMoveEvent	viewerselections.py	/^    def mouseMoveEvent(self, event):$/;"	m	class:SelectionCornerHandleItem	access:public
+mouseMoveEvent	viewerselections.py	/^    def mouseMoveEvent(self, event):$/;"	m	class:SelectionHandleItem
+mouseMoveEvent	viewerselections.py	/^    def mouseMoveEvent(self, event):$/;"	m	class:SelectionHandleItem	access:public
+mouseMoveEvent	viewerselections.py	/^    def mouseMoveEvent(self, event):$/;"	m	class:ViewerSelectionItem
+mouseMoveEvent	viewerselections.py	/^    def mouseMoveEvent(self, event):$/;"	m	class:ViewerSelectionItem	access:public
+mouseMoveEvent	viewerselections.py	/^    def mouseMoveEvent(self, event):$/;"	m	class:ViewerSelections
+mouseMoveEvent	viewerselections.py	/^    def mouseMoveEvent(self, event):$/;"	m	class:ViewerSelections	access:public
+mousePressEvent	vieweritem.py	/^    def mousePressEvent(self, event):$/;"	m	class:AbstractViewerItem
+mousePressEvent	vieweritem.py	/^    def mousePressEvent(self, event):$/;"	m	class:AbstractViewerItem	access:public
+mousePressEvent	viewerselections.py	/^    def mousePressEvent(self, event):$/;"	m	class:SelectionCornerHandleItem
+mousePressEvent	viewerselections.py	/^    def mousePressEvent(self, event):$/;"	m	class:SelectionCornerHandleItem	access:public
+mousePressEvent	viewerselections.py	/^    def mousePressEvent(self, event):$/;"	m	class:SelectionHandleItem
+mousePressEvent	viewerselections.py	/^    def mousePressEvent(self, event):$/;"	m	class:SelectionHandleItem	access:public
+mousePressEvent	viewerselections.py	/^    def mousePressEvent(self, event):$/;"	m	class:ViewerSelectionItem
+mousePressEvent	viewerselections.py	/^    def mousePressEvent(self, event):$/;"	m	class:ViewerSelectionItem	access:public
+mousePressEvent	viewerselections.py	/^    def mousePressEvent(self, event):$/;"	m	class:ViewerSelections
+mousePressEvent	viewerselections.py	/^    def mousePressEvent(self, event):$/;"	m	class:ViewerSelections	access:public
+mouseReleaseEvent	application.py	/^    def mouseReleaseEvent(self, QMouseEvent):$/;"	f	function:MyWidget.map_to_pdf
+mouseReleaseEvent	application.py	/^    def mouseReleaseEvent(self, QMouseEvent):$/;"	m	class:MyWidget
+mouseReleaseEvent	application.py	/^def mouseReleaseEvent(self)$/;"	f
+mouseReleaseEvent	application.py	/^def mouseReleaseEvent(self, QMouseEvent):$/;"	f
+mouseReleaseEvent	application.py	/^def mouseReleaseEvent(self, args):$/;"	f
+mouseReleaseEvent	vieweritem.py	/^    def mouseReleaseEvent(self, event):$/;"	m	class:AbstractViewerItem
+mouseReleaseEvent	vieweritem.py	/^    def mouseReleaseEvent(self, event):$/;"	m	class:AbstractViewerItem	access:public
+mouseReleaseEvent	viewerselections.py	/^    def mouseReleaseEvent(self, event):$/;"	m	class:SelectionCornerHandleItem
+mouseReleaseEvent	viewerselections.py	/^    def mouseReleaseEvent(self, event):$/;"	m	class:SelectionCornerHandleItem	access:public
+mouseReleaseEvent	viewerselections.py	/^    def mouseReleaseEvent(self, event):$/;"	m	class:SelectionHandleItem
+mouseReleaseEvent	viewerselections.py	/^    def mouseReleaseEvent(self, event):$/;"	m	class:SelectionHandleItem	access:public
+mouseReleaseEvent	viewerselections.py	/^    def mouseReleaseEvent(self, event):$/;"	m	class:ViewerSelectionItem
+mouseReleaseEvent	viewerselections.py	/^    def mouseReleaseEvent(self, event):$/;"	m	class:ViewerSelectionItem	access:public
+mouseReleaseEvent	viewerselections.py	/^    def mouseReleaseEvent(self, event):$/;"	m	class:ViewerSelections
+mouseReleaseEvent	viewerselections.py	/^    def mouseReleaseEvent(self, event):$/;"	m	class:ViewerSelections	access:public
+moveBoundingRect	viewerselections.py	/^    def moveBoundingRect(self, dx, dy):$/;"	m	class:ViewerSelectionItem
+moveBoundingRect	viewerselections.py	/^    def moveBoundingRect(self, dx, dy):$/;"	m	class:ViewerSelectionItem	access:public
+nextPage	vieweritem.py	/^    def nextPage(self):$/;"	m	class:AbstractViewerItem
+nextPage	vieweritem.py	/^    def nextPage(self):$/;"	m	class:AbstractViewerItem	access:public
+numPages	vieweritem.py	/^    def numPages(self):$/;"	m	class:AbstractViewerItem
+numPages	vieweritem.py	/^    def numPages(self):$/;"	m	class:AbstractViewerItem	access:public
+numPages	vieweritem.py	/^    def numPages(self):$/;"	m	class:PopplerViewerItem
+numPages	vieweritem.py	/^    def numPages(self):$/;"	m	class:PopplerViewerItem	access:public
+openFile	mainwindow.py	/^    def openFile(self, fileName):$/;"	m	class:MainWindow
+openFile	mainwindow.py	/^    def openFile(self, fileName):$/;"	m	class:MainWindow	access:public
+optimizePdfGhostscript	pdfcropper.py	/^def optimizePdfGhostscript(oldfilename, newfilename):$/;"	f	access:public
+orderIndex	viewerselections.py	/^    def orderIndex(self):$/;"	m	class:ViewerSelectionItem
+orderIndex	viewerselections.py	/^    def orderIndex(self):$/;"	m	class:ViewerSelectionItem	access:public
+paint	vieweritem.py	/^    def paint(self, painter, option, widget):$/;"	m	class:AbstractViewerItem
+paint	vieweritem.py	/^    def paint(self, painter, option, widget):$/;"	m	class:AbstractViewerItem	access:public
+paint	viewerselections.py	/^    def paint(self, painter, option, widget):$/;"	m	class:SelectionCornerHandleItem
+paint	viewerselections.py	/^    def paint(self, painter, option, widget):$/;"	m	class:SelectionCornerHandleItem	access:public
+paint	viewerselections.py	/^    def paint(self, painter, option, widget):$/;"	m	class:SelectionHandleItem
+paint	viewerselections.py	/^    def paint(self, painter, option, widget):$/;"	m	class:SelectionHandleItem	access:public
+paint	viewerselections.py	/^    def paint(self, painter, option, widget):$/;"	m	class:ViewerSelectionItem
+paint	viewerselections.py	/^    def paint(self, painter, option, widget):$/;"	m	class:ViewerSelectionItem	access:public
+pixAt	autotrim.py	/^    def pixAt(x, y):$/;"	f	function:autoTrimMargins	access:public
+previousPage	vieweritem.py	/^    def previousPage(self):$/;"	m	class:AbstractViewerItem
+previousPage	vieweritem.py	/^    def previousPage(self):$/;"	m	class:AbstractViewerItem	access:public
+readSettings	mainwindow.py	/^    def readSettings(self):$/;"	m	class:MainWindow
+readSettings	mainwindow.py	/^    def readSettings(self):$/;"	m	class:MainWindow	access:public
+reset	vieweritem.py	/^    def reset(self):$/;"	m	class:AbstractViewerItem
+reset	vieweritem.py	/^    def reset(self):$/;"	m	class:AbstractViewerItem	access:public
+reset	vieweritem.py	/^    def reset(self):$/;"	m	class:PopplerViewerItem
+reset	vieweritem.py	/^    def reset(self):$/;"	m	class:PopplerViewerItem	access:public
+resizeEvent	mainwindow.py	/^    def resizeEvent(self, event):$/;"	m	class:MainWindow
+resizeEvent	mainwindow.py	/^    def resizeEvent(self, event):$/;"	m	class:MainWindow	access:public
+retranslateUi	mainwindowui_qt4.py	/^    def retranslateUi(self, MainWindow):$/;"	m	class:Ui_MainWindow	access:public
+retranslateUi	mainwindowui_qt5.py	/^    def retranslateUi(self, MainWindow):$/;"	m	class:Ui_MainWindow	access:public
+retranslateUi	mwui_qt5.py	/^    def retranslateUi(self, MainWindow):$/;"	m	class:Ui_MainWindow	access:public
+saveTypes	mainwindow.py	/^    def saveTypes(self, settings):$/;"	m	class:AspectRatioTypeManager
+saveTypes	mainwindow.py	/^    def saveTypes(self, settings):$/;"	m	class:AspectRatioTypeManager	access:public
+selection	viewerselections.py	/^    def selection(self):$/;"	m	class:SelectionCornerHandleItem
+selection	viewerselections.py	/^    def selection(self):$/;"	m	class:SelectionCornerHandleItem	access:public
+selection	viewerselections.py	/^    def selection(self):$/;"	m	class:SelectionHandleItem
+selection	viewerselections.py	/^    def selection(self):$/;"	m	class:SelectionHandleItem	access:public
+selection	viewerselections.py	/^    def selection(self):$/;"	m	class:ViewerSelectionItem
+selection	viewerselections.py	/^    def selection(self):$/;"	m	class:ViewerSelectionItem	access:public
+selectionExceptions	viewerselections.py	/^    selectionExceptions = property(getSelectionExceptions, setSelectionExceptions)$/;"	v	class:ViewerSelections
+selectionMode	viewerselections.py	/^    selectionMode = property(getSelectionMode, setSelectionMode)$/;"	v	class:ViewerSelections
+selectionVisibleOnPage	viewerselections.py	/^    def selectionVisibleOnPage(self, pageIndex):$/;"	m	class:ViewerSelectionItem
+selectionVisibleOnPage	viewerselections.py	/^    def selectionVisibleOnPage(self, pageIndex):$/;"	m	class:ViewerSelectionItem	access:public
+selections	mainwindow.py	/^    def selections(self):$/;"	m	class:MainWindow
+selections	mainwindow.py	/^    def selections(self):$/;"	m	class:MainWindow	access:public
+selections	viewerselections.py	/^    def selections(self):$/;"	m	class:ViewerSelectionItem
+selections	viewerselections.py	/^    def selections(self):$/;"	m	class:ViewerSelectionItem	access:public
+send_anki	application.py	/^    def send_anki(self,fileName):$/;"	m	class:MyWidget
+send_anki	application.py	/^    def send_anki(self,fileName):$/;"	m	class:MyWidget	access:public
+send_ndi	application.py	/^    def send_ndi(self,fileName):$/;"	f	function:MyWidget.map_to_pdf
+send_ndi	application.py	/^    def send_ndi(self,fileName):$/;"	m	class:MyWidget
+send_ndi	application.py	/^    def send_ndi(self,fileName):$/;"	m	class:MyWidget	access:public
+send_width	application.py	/^    def send_width(self,fileName):$/;"	f	function:MyWidget.map_to_pdf
+send_width	application.py	/^    def send_width(self,fileName):$/;"	m	class:MyWidget
+send_width	application.py	/^    def send_width(self,fileName):$/;"	m	class:MyWidget	access:public
+setAsCurrent	viewerselections.py	/^    def setAsCurrent(self):$/;"	m	class:ViewerSelectionItem
+setAsCurrent	viewerselections.py	/^    def setAsCurrent(self):$/;"	m	class:ViewerSelectionItem	access:public
+setAspectRatioData	viewerselections.py	/^    def setAspectRatioData(self, data):$/;"	m	class:ViewerSelectionItem
+setAspectRatioData	viewerselections.py	/^    def setAspectRatioData(self, data):$/;"	m	class:ViewerSelectionItem	access:public
+setBoundingRect	viewerselections.py	/^    def setBoundingRect(self, pt1, pt2):$/;"	m	class:ViewerSelectionItem
+setBoundingRect	viewerselections.py	/^    def setBoundingRect(self, pt1, pt2):$/;"	m	class:ViewerSelectionItem	access:public
+setCurrentPageIndex	vieweritem.py	/^    def setCurrentPageIndex(self, idx):$/;"	m	class:AbstractViewerItem
+setCurrentPageIndex	vieweritem.py	/^    def setCurrentPageIndex(self, idx):$/;"	m	class:AbstractViewerItem	access:public
+setCurrentSelection	viewerselections.py	/^    def setCurrentSelection(self, currentSelection):$/;"	m	class:ViewerSelections
+setCurrentSelection	viewerselections.py	/^    def setCurrentSelection(self, currentSelection):$/;"	m	class:ViewerSelections	access:public
+setDistributeAspectRatio	viewerselections.py	/^    def setDistributeAspectRatio(self, distributeAspectRatio):$/;"	m	class:ViewerSelections
+setDistributeAspectRatio	viewerselections.py	/^    def setDistributeAspectRatio(self, distributeAspectRatio):$/;"	m	class:ViewerSelections	access:public
+setSelectionExceptions	viewerselections.py	/^    def setSelectionExceptions(self, exceptions):$/;"	m	class:ViewerSelections
+setSelectionExceptions	viewerselections.py	/^    def setSelectionExceptions(self, exceptions):$/;"	m	class:ViewerSelections	access:public
+setSelectionMode	viewerselections.py	/^    def setSelectionMode(self, mode):$/;"	m	class:ViewerSelections
+setSelectionMode	viewerselections.py	/^    def setSelectionMode(self, mode):$/;"	m	class:ViewerSelections	access:public
+settingsCaption	mainwindow.py	/^    def settingsCaption(self):$/;"	m	class:AspectRatioTypeManager
+settingsCaption	mainwindow.py	/^    def settingsCaption(self):$/;"	m	class:AspectRatioTypeManager	access:public
+settingsCaption	mainwindow.py	/^    def settingsCaption(self):$/;"	m	class:DeviceTypeManager
+settingsCaption	mainwindow.py	/^    def settingsCaption(self):$/;"	m	class:DeviceTypeManager	access:public
+settingsCaption	mainwindow.py	/^    def settingsCaption(self):$/;"	m	class:SelAspectRatioTypeManager
+settingsCaption	mainwindow.py	/^    def settingsCaption(self):$/;"	m	class:SelAspectRatioTypeManager	access:public
+setupUi	mainwindowui_qt4.py	/^    def setupUi(self, MainWindow):$/;"	m	class:Ui_MainWindow	access:public
+setupUi	mainwindowui_qt5.py	/^    def setupUi(self, MainWindow):$/;"	m	class:Ui_MainWindow	access:public
+setupUi	mwui_qt5.py	/^    def setupUi(self, MainWindow):$/;"	m	class:Ui_MainWindow	access:public
+showWarning	mainwindow.py	/^    def showWarning(self, title, text):$/;"	m	class:MainWindow
+showWarning	mainwindow.py	/^    def showWarning(self, title, text):$/;"	m	class:MainWindow	access:public
+signal_emitted	application.py	/^    signal_emitted = pyqtSignal()$/;"	v	class:MyWidget
+slot	application.py	/^    def slot(self,n):$/;"	m	class:MyWidget
+slot	application.py	/^    def slot(self,n):$/;"	m	class:MyWidget	access:public
+slotAddAnki	mainwindow.py	/^    def slotAddAnki(self):$/;"	m	class:MainWindow
+slotAddAnki	mainwindow.py	/^    def slotAddAnki(self):$/;"	m	class:MainWindow	access:public
+slotContextMenu	mainwindow.py	/^    def slotContextMenu(self, pos):$/;"	m	class:MainWindow
+slotContextMenu	mainwindow.py	/^    def slotContextMenu(self, pos):$/;"	m	class:MainWindow	access:public
+slotCurrentPageEdited	mainwindow.py	/^    def slotCurrentPageEdited(self, text):$/;"	m	class:MainWindow
+slotCurrentPageEdited	mainwindow.py	/^    def slotCurrentPageEdited(self, text):$/;"	m	class:MainWindow	access:public
+slotDeleteSelection	mainwindow.py	/^    def slotDeleteSelection(self):$/;"	m	class:MainWindow
+slotDeleteSelection	mainwindow.py	/^    def slotDeleteSelection(self):$/;"	m	class:MainWindow	access:public
+slotDeviceTypeChanged	mainwindow.py	/^    def slotDeviceTypeChanged(self, index):$/;"	m	class:MainWindow
+slotDeviceTypeChanged	mainwindow.py	/^    def slotDeviceTypeChanged(self, index):$/;"	m	class:MainWindow	access:public
+slotDistributeAspectRatioChanged	mainwindow.py	/^    def slotDistributeAspectRatioChanged(self):$/;"	m	class:MainWindow
+slotDistributeAspectRatioChanged	mainwindow.py	/^    def slotDistributeAspectRatioChanged(self):$/;"	m	class:MainWindow	access:public
+slotFirstPage	mainwindow.py	/^    def slotFirstPage(self):$/;"	m	class:MainWindow
+slotFirstPage	mainwindow.py	/^    def slotFirstPage(self):$/;"	m	class:MainWindow	access:public
+slotFitInView	mainwindow.py	/^    def slotFitInView(self, checked):$/;"	m	class:MainWindow
+slotFitInView	mainwindow.py	/^    def slotFitInView(self, checked):$/;"	m	class:MainWindow	access:public
+slotKrop	mainwindow.py	/^    def slotKrop(self):$/;"	m	class:MainWindow
+slotKrop	mainwindow.py	/^    def slotKrop(self):$/;"	m	class:MainWindow	access:public
+slotLastPage	mainwindow.py	/^    def slotLastPage(self):$/;"	m	class:MainWindow
+slotLastPage	mainwindow.py	/^    def slotLastPage(self):$/;"	m	class:MainWindow	access:public
+slotNewSelection	mainwindow.py	/^    def slotNewSelection(self):$/;"	m	class:MainWindow
+slotNewSelection	mainwindow.py	/^    def slotNewSelection(self):$/;"	m	class:MainWindow	access:public
+slotNewSelectionGrid	mainwindow.py	/^    def slotNewSelectionGrid(self):$/;"	m	class:MainWindow
+slotNewSelectionGrid	mainwindow.py	/^    def slotNewSelectionGrid(self):$/;"	m	class:MainWindow	access:public
+slotNextPage	mainwindow.py	/^    def slotNextPage(self):$/;"	m	class:MainWindow
+slotNextPage	mainwindow.py	/^    def slotNextPage(self):$/;"	m	class:MainWindow	access:public
+slotOpenFile	mainwindow.py	/^    def slotOpenFile(self):$/;"	m	class:MainWindow
+slotOpenFile	mainwindow.py	/^    def slotOpenFile(self):$/;"	m	class:MainWindow	access:public
+slotPreviousPage	mainwindow.py	/^    def slotPreviousPage(self):$/;"	m	class:MainWindow
+slotPreviousPage	mainwindow.py	/^    def slotPreviousPage(self):$/;"	m	class:MainWindow	access:public
+slotSelAspectRatioChanged	mainwindow.py	/^    def slotSelAspectRatioChanged(self):$/;"	m	class:MainWindow
+slotSelAspectRatioChanged	mainwindow.py	/^    def slotSelAspectRatioChanged(self):$/;"	m	class:MainWindow	access:public
+slotSelAspectRatioTypeChanged	mainwindow.py	/^    def slotSelAspectRatioTypeChanged(self, index):$/;"	m	class:MainWindow
+slotSelAspectRatioTypeChanged	mainwindow.py	/^    def slotSelAspectRatioTypeChanged(self, index):$/;"	m	class:MainWindow	access:public
+slotSelExceptionsChanged	mainwindow.py	/^    def slotSelExceptionsChanged(self):$/;"	m	class:MainWindow
+slotSelExceptionsChanged	mainwindow.py	/^    def slotSelExceptionsChanged(self):$/;"	m	class:MainWindow	access:public
+slotSelExceptionsEdited	mainwindow.py	/^    def slotSelExceptionsEdited(self, text):$/;"	m	class:MainWindow
+slotSelExceptionsEdited	mainwindow.py	/^    def slotSelExceptionsEdited(self, text):$/;"	m	class:MainWindow	access:public
+slotSelectFile	mainwindow.py	/^    def slotSelectFile(self):$/;"	m	class:MainWindow
+slotSelectFile	mainwindow.py	/^    def slotSelectFile(self):$/;"	m	class:MainWindow	access:public
+slotSelectionMode	mainwindow.py	/^    def slotSelectionMode(self, checked):$/;"	m	class:MainWindow
+slotSelectionMode	mainwindow.py	/^    def slotSelectionMode(self, checked):$/;"	m	class:MainWindow	access:public
+slotSplitterMoved	mainwindow.py	/^    def slotSplitterMoved(self, pos, idx):$/;"	m	class:MainWindow
+slotSplitterMoved	mainwindow.py	/^    def slotSplitterMoved(self, pos, idx):$/;"	m	class:MainWindow	access:public
+slotTrimMargins	mainwindow.py	/^    def slotTrimMargins(self):$/;"	m	class:MainWindow
+slotTrimMargins	mainwindow.py	/^    def slotTrimMargins(self):$/;"	m	class:MainWindow	access:public
+slotTrimMarginsAll	mainwindow.py	/^    def slotTrimMarginsAll(self):$/;"	m	class:MainWindow
+slotTrimMarginsAll	mainwindow.py	/^    def slotTrimMarginsAll(self):$/;"	m	class:MainWindow	access:public
+slotZoomIn	mainwindow.py	/^    def slotZoomIn(self):$/;"	m	class:MainWindow
+slotZoomIn	mainwindow.py	/^    def slotZoomIn(self):$/;"	m	class:MainWindow	access:public
+slotZoomOut	mainwindow.py	/^    def slotZoomOut(self):$/;"	m	class:MainWindow
+slotZoomOut	mainwindow.py	/^    def slotZoomOut(self):$/;"	m	class:MainWindow	access:public
+slot_anki	application.py	/^    def slot_anki(self,n):$/;"	m	class:MyWidget
+slot_anki	application.py	/^    def slot_anki(self,n):$/;"	m	class:MyWidget	access:public
+slot_ndi	application.py	/^    def slot_ndi(self,n):$/;"	m	class:MyWidget
+slot_ndi	application.py	/^    def slot_ndi(self,n):$/;"	m	class:MyWidget	access:public
+slot_ndi	application.py	/^    def slot_ndi(self,n,win):$/;"	m	class:MyWidget
+slot_width	application.py	/^    def slot_width(self,n):$/;"	f	function:MyWidget.map_to_pdf
+slot_width	application.py	/^    def slot_width(self,n):$/;"	m	class:MyWidget
+slot_width	application.py	/^    def slot_width(self,n):$/;"	m	class:MyWidget	access:public
+str2pages	mainwindow.py	/^    def str2pages(self, s):$/;"	m	class:MainWindow
+str2pages	mainwindow.py	/^    def str2pages(self, s):$/;"	m	class:MainWindow	access:public
+str_unicode	mainwindow.py	/^    str_unicode = str$/;"	v
+str_unicode	mainwindow.py	/^    str_unicode = unicode$/;"	v
+triggered	application.py	/^    def triggered(self):$/;"	m	class:MyWidget
+triggered	application.py	/^    def triggered(self):$/;"	m	class:MyWidget	access:public
+trimMarginsSelection	mainwindow.py	/^    def trimMarginsSelection(self, sel):$/;"	m	class:MainWindow
+trimMarginsSelection	mainwindow.py	/^    def trimMarginsSelection(self, sel):$/;"	m	class:MainWindow	access:public
+updateControls	mainwindow.py	/^    def updateControls(self):$/;"	m	class:MainWindow
+updateControls	mainwindow.py	/^    def updateControls(self):$/;"	m	class:MainWindow	access:public
+updateSelectionVisibility	viewerselections.py	/^    def updateSelectionVisibility(self):$/;"	m	class:ViewerSelections
+updateSelectionVisibility	viewerselections.py	/^    def updateSelectionVisibility(self):$/;"	m	class:ViewerSelections	access:public
+usepypdf2	pdfcropper.py	/^        usepypdf2 = False$/;"	v
+usepypdf2	pdfcropper.py	/^usepypdf2 = '--no-PyPDF2' not in sys.argv$/;"	v
+viewer	mainwindow.py	/^    def viewer(self):$/;"	m	class:MainWindow
+viewer	mainwindow.py	/^    def viewer(self):$/;"	m	class:MainWindow	access:public
+viewer	viewerselections.py	/^    def viewer(self):$/;"	m	class:ViewerSelectionItem
+viewer	viewerselections.py	/^    def viewer(self):$/;"	m	class:ViewerSelectionItem	access:public
+writeSettings	mainwindow.py	/^    def writeSettings(self):$/;"	m	class:MainWindow
+writeSettings	mainwindow.py	/^    def writeSettings(self):$/;"	m	class:MainWindow	access:public
+writeToFile	pdfcropper.py	/^    def writeToFile(self, filename):$/;"	m	class:AbstractPdfCropper	access:public
+writeToStream	pdfcropper.py	/^    def writeToStream(self, stream):$/;"	m	class:AbstractPdfCropper	access:public
+writeToStream	pdfcropper.py	/^    def writeToStream(self, stream):$/;"	m	class:PyPdfCropper	access:public

@@ -1,0 +1,27 @@
+REPOSITORY                           TAG        IMAGE ID       CREATED         SIZE
+<none>                               <none>     12226fef0978   3 days ago      63.9MB
+krop                                 0.0.1      4fc86b7ed095   5 days ago      1.24GB
+chrome                               0.0.1      217eaef9d520   5 days ago      1.12GB
+apps/dry                             latest     cfa15c0bfd53   5 days ago      22MB
+lj020326/ubuntu2204-systemd-python   latest     bf791f5418e9   5 days ago      512MB
+ubuntu                               22.04      6b7dfa7e8fdb   11 days ago     77.8MB
+alpine                               latest     49176f190c7e   4 weeks ago     7.05MB
+rocker/rstudio                       v6.2       69a4c753e44c   4 months ago    8.28GB
+rocker/rstudio                       v6.1       15a77f9a2c5b   4 months ago    7.88GB
+rocker/rstudio                       v6         1febea355c83   4 months ago    7.88GB
+rocker/rstudio                       BETA       ae8f0ba3ddbe   5 months ago    7.87GB
+rocker/rstudio                       v4.4       394906ba1f20   5 months ago    7.75GB
+rocker/rstudio                       4.3        e3d774c04d95   5 months ago    7.05GB
+rocker/rstudio                       v4.2       041b2cfebb20   5 months ago    6.57GB
+rocker/rstudio                       v4.1       c2c20efa59f3   5 months ago    5.58GB
+rocker/rstudio                       v5         a2da7b82cbed   5 months ago    5.19GB
+rocker/rstudio                       v4         28d3b24dfb80   5 months ago    5.05GB
+rocker/rstudio                       v3         9e7847d890b7   5 months ago    4.94GB
+rocker/rstudio                       v2         f64d7686540b   5 months ago    2.71GB
+rocker/rstudio                       v1         83f00017d053   5 months ago    2.45GB
+rocker/rstudio                       version2   c619759cc179   6 months ago    2.61GB
+rocker/rstudio                       version1   240304b07c06   6 months ago    2.4GB
+rocker/rstudio                       latest     be660ebbe18a   6 months ago    1.76GB
+hello-world                          latest     feb5d9fea6a5   15 months ago   13.3kB
+moncho/dry                           latest     7ea1731b253f   3 years ago     19.9MB
+imiell/sar_report                    latest     d532725f22c1   4 years ago     480MB
