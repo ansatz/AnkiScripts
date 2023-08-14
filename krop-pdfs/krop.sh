@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-set -o nounset -o pipefail 
+#set -o nounset -o pipefail 
+#set -e # exit @error
+#set -u # unset unbound variable treat as error var
+#set -x # debug mode display executed commands
+#shellcheck :TODO:
 
 #----------------------------------------#
 # Usage: . ./krop.sh AUTHOR/PAPER.pdf
@@ -19,10 +23,20 @@ LYELLOW='\e[93m'
 DIM='\e[2m'
 BLINK='\e[5m'
 
-if [ $# -neq 2 ]
+if [ $# -ne 2 ]
     then 
         printf "${RED}Usage: . ./krop.sh AUTHOR/[PAPER.pdf]${NC} [YYYY_Mon]\n"
         printf "example: . ./krop.sh ALFORD/subquantal.pdf  2023_Jul\n"
+        return
+        #(exit 33) && true # return exit code w/o return shell, -e active but avoid return shell
+fi
+
+# paper dir
+t=$(echo "${1}" | grep -F -e "/")
+if [ $? -eq 1 ]; then
+    printf "Usage: . ./krop.sh ${RED}AUTHORDIR/[PAPER.pdf]${NC} [YYYY_Mon]\n"
+    printf "\t\t# author dir required\n"
+    return
 fi
 
 AUTHORDIR=${1%/*}
@@ -35,9 +49,17 @@ CSV=${AUTHORDIR}_${PAPER%*pdf}csv
 # 1. GUI krop
  #_container_:$krop  //run gui
 echo "----------------------------------------"
-printf "${LYELLOW}While running krop in ${AUTHORDIR}/:\n"
-printf "open ${PAPER}${NC}${DIM} and${NC}${LYELLOW} save cropped as ${CROPPED}\n"
-krop $1 &
+# krop exist
+if ! command -v krop $1 &> /dev/null
+then
+    echo "krop could not be found"
+    return
+else
+    printf "${LYELLOW}While running krop in ${AUTHORDIR}/:\n"
+    printf "open ${PAPER}${NC}${DIM} and${NC}${LYELLOW} save cropped as ${CROPPED}\n"
+    krop $1 &
+fi
+
 printf "\n${RED}Press any key to continue...${NC}\n"
 echo "----------------------------------------"
 read -n 1
