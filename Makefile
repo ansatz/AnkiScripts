@@ -1,8 +1,9 @@
 # run anki version 21.54
 # with gldriver6 > software
+docker_img_tag="0.3"
 dockeranki:
 	xhost +
-	docker run -it --rm -e DISPLAY=$$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/valence/.local/share/Anki2:/root/.local/share/Anki2 -v $$(pwd):/home krop_anki:0.2
+	docker run -it --rm -e DISPLAY=$$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/valence/.local/share/Anki2:/root/.local/share/Anki2 -v $$(pwd):/home krop_anki:"${docker_img_tag}"
 	xhost -
 
 # from running container
